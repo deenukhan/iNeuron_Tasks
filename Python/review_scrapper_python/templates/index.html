@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block head %}
+
+<title>Search Page</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+{% endblock %}
+
+{% block body %}
+<ul>
+    <li><a href="/reference" target="_blank">Reference</a></li>
+    <li><a href="https://linkedin.com/in/deenukhan" target="_blank">LinkedIn</a></li>
+    <li><a href="https://github.com/deenukhan" target="_blank">Github</a></li>
+</ul>
+
+<div class="content">
+
+    <div class="form">
+        <h1 style="text-align: center">Search Flipkart Product</h1>
+        <form style="text-align: center" action="/" method="POST">
+            <input type="text"  name="content" id="content" placeholder="e.g. Iphone 11">
+            <input type="submit" value="Search">
+        </form>
+    </div>
+
+
+
+
+</div>
+
+
+{% endblock %}
+
